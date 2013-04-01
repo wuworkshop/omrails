@@ -27,6 +27,12 @@ body {
   }
 }
 
+/* Override Bootstrap's styles */
+input[type="file"] {
+  height: auto;
+  line-height: normal;
+}
+
 /* Required for jQuery Masonry */
 
 .box {
