@@ -1,8 +1,10 @@
-$boxes = $('<%= j render(@pins) %>')
+
+var $boxes = $('<%= j render(@pins) %>');
 
 $('#pins').append( $boxes ).imagesLoaded( function(){
-  $('#pins').masonry( 'reload' );
+  $('#pins').masonry( 'reload');
 });
+
 <% if @pins.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate(@pins) %>');
 <% else %>
